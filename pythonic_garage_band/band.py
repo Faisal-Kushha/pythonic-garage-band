@@ -1,4 +1,7 @@
 class Musician:
+    """
+    A musician which represent the base class and handle common functionality
+    """
     members = []
 
     def __init__(self, name):
@@ -19,6 +22,9 @@ class Musician:
 
 
 class Band(Musician):
+    """
+    A Band class which have name attribute (string) and members attribute which is a list of instances that inherit from base class. it has four methods: play_solos, __str__ , __repr__, to_list.
+    """
     instances = []
 
     def __init__(self, name, members):
@@ -46,6 +52,10 @@ class Band(Musician):
 
 
 class Guitarist(Musician):
+    """
+    A sub class which has four methods: play_solo, __str__ , __repr__, get_instrument .
+    """
+
     def __str__(self):
         return f'My name is {self.name} and I play guitar'
 
@@ -60,6 +70,10 @@ class Guitarist(Musician):
 
 
 class Bassist(Musician):
+    """
+    A sub class which has four methods: play_solo, __str__ , __repr__, get_instrument .
+    """
+
     def __str__(self):
         return f'My name is {self.name} and I play bass'
 
@@ -74,6 +88,10 @@ class Bassist(Musician):
 
 
 class Drummer(Musician):
+    """
+    A sub class which has four methods: play_solo, __str__ , __repr__, get_instrument .
+    """
+
     def __str__(self):
         return f'My name is {self.name} and I play drums'
 
